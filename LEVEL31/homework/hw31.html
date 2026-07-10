@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- radio-სა და checkbox-შორის განსხვავება ის არის რომ რადიოს დახმარებით მხოლოდ ერთი რაღაცის შერჩევა შეგვიძლია ხოლო ჩჰეკბოქსით ბევრი რამის შერჩევა -->
+    <!-- input-ი იმიტომ უნდა იყოს form-ში დაწერილი რომ  input ელემენტების გამოყენება form-ში აუცილებელია მონაცემების შესაგროვებლად -->
+         <form>
+ 
+  <label for="name">name:</label><br>
+  <input type="text" id="name" name="user_name">
+  <br><br>
+
+
+  <label for="email">email</label><br>
+  <input type="email" id="email" name="user_email">
+  <br><br>
+
+
+  <input type="submit">
+</form>
+
+<!-- drop down menu -არის ჩამოსაშლელი მენიუ -->
+ <form>
+    <select name="color">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="white">white</option>
+    </select>
+ </form>
+
+
+
+ <!-- name და value ატრიბუტები განსაზღვრავენ, თუ რა ინფორმაცია გაიგზავნება სერვერზე. -->
+
+
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name"><br>
+    <p>select one</p>
+    <label for="category">Category</label>
+    <select name="Games">
+         <option value="Games">Games</option>
+    </select><br>
+    <br>
+    <label for="subcategory">subcategory</label>
+    <select name="Game">
+        <option value="Football">Football</option>
+        <option value="Cricket">Cricket</option>
+        <option value="Baseball">Baseball</option>
+        <option value="Tennis">Tennis</option>
+    </select><br>
+    <br>
+    <input type="submit">
+  </form>
+</body>
+</html>
