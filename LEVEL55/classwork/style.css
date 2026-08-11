@@ -1,0 +1,12 @@
+p {
+    color: red;
+    background-color: green;
+}
+
+
+ p {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
