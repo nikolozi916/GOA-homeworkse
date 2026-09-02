@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+   color: red;
+}
+
+.my-class {
+    color: blue;
+}
+
+
+ #my-paragraph {
+    color: green;
+}
+
+    </style>
+</head>
+<body>
+    <!-- ID სელექტორი გამოიყენება გვერდზე მხოლოდ ერთი, უნიკალური ელემენტის სტილისთვის.Class სელექტორი  გამოიყენება რამდენიმე ელემენტისთვის, რომელთაც ერთნაირი სტილი უნდა ჰქონდეთ. -->
+     
+<div id="main-header">ეს არის უნიკალური სათაური</div>
+<p class="text-green">ეს ტექსტი იქნება მწვანე.</p>
+<p class="text-green">ეს ტექსტიც იქნება მწვანე.</p>
+
+    <!--  სელექტორების პრიორიტეტები ბრაუზერი სტილებს ანიჭებს პრიორიტეტის მიხედვით თუ ერთ ელემენტზე ორი განსხვავებული წესი მოქმედებს უფრო მაღალი პრიორიტეტის მქონე. -->
+        <p id="my-paragraph" class="my-class" style="color: pink;">
+    </p>
+
+    <!-- კომენტარები css-ში გვეხმარება კოდის ორგანიზებაში. და external css იმიტომ არის კარგი რომ უფრო სწორად წავიკითხოთ  -->
+
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ჩემი წიგნების ბლოგი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="blog-title">სამყარო წიგნების გარშემო</h1>
+    
+    <div class="book-card">
+        <h2 class="book-name">ნატვრის ხე</h2>
+        <p class="description">გიორგი ლეონიძის შესანიშნავი მოთხრობების კრებული.</p>
+    </div>
+
+    <div class="book-card">
+        <h2 class="book-name">ვეფხისტყაოსანი</h2>
+        <p class="description">შოთა რუსთაველის უკვდავი პოემა.</p>
+    </div>
+
+    
+    <p id="footer-text">© 2026 ყველა უფლება დაცულია.</p>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>აღმოაჩინე გოა</title>
+    <link rel="stylesheet" href="goa-style.css">
+</head>
+<body>
+
+    <div id="hero-section">
+        <h1>მოგზაურობა გოაში</h1>
+        <p>ინდოეთის ულამაზესი სანაპიროების მხარე</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">რატომ უნდა ვესტუმროთ გოას?</h2>
+        
+        <div class="feature-box">
+            <h3>ოქროსფერი სანაპიროები</h3>
+            <p>გოა ცნობილია თავისი საოცარი პლაჟებით, როგორიცაა ბაგა და კალანგუტი.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>კულტურა და ისტორია</h3>
+            <p>ძველი გოა სავსეა პორტუგალიური არქიტექტურითა და ისტორიული ტაძრებით.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>ღამის ცხოვრება</h3>
+            <p>გოას ღამის ბაზრობები და წვეულებები სანაპიროზე დაუვიწყარ ემოციებს გპირდებათ.</p>
+        </div>
+    </div>
+
+    <p id="goa-footer">გელოდებათ თქვენი ოცნების თავგადასავალი გოაში!</p>
+
+</body>
+</html>
