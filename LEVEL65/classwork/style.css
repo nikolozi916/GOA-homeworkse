@@ -1,0 +1,13 @@
+#l1:link {
+    text-decoration: none;
+}
+
+
+#l1:visited {
+    color: red;
+}
+
+#l1:hover {
+    color: aliceblue;
+    text-decoration: none;
+}
