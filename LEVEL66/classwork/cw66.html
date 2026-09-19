@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO-MARKET | მანქანების გაყიდვა</title>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="main-header">
+            <div class="logo">
+                <i class="fa-solid fa-car"></i> AUTO-MARKET
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">მთავარი</a>
+                <a href="#">მანქანები</a>
+                <a href="#">ჩვენს შესახებ</a>
+                <a href="#">კონტაქტი</a>
+            </div>
+            <button class="add-car-btn"><i class="fa-solid fa-plus"></i> განცხადების დამატება</button>
+        </div>
+    </div>
+
+    
+    <div class="filter-section">
+        <div class="container filter-container">
+            <h2>იპოვნე ოცნების ავტომობილი</h2>
+            <form class="filter-form">
+                <div class="filter-group">
+                    <label>მარკა</label>
+                    <select>
+                        <option value="">ყველა მარკა</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes-Benz</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="porsche">Porsche</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>მაქს. ფასი ($)</label>
+                    <input type="number" placeholder="მაგ: 20000">
+                </div>
+                <div class="filter-group">
+                    <label>წელი (დან)</label>
+                    <input type="number" placeholder="მაგ: 2018">
+                </div>
+                <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i> ძებნა</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="content-section container">
+        <h3 class="section-title">ახალი განცხადებები</h3>
+        
+        <div class="cars-grid">
+            
+            
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="https://unsplash.com" alt="BMW">
+                    
+                    <div class="price-tag">$45,000</div>
+                </div>
+                <div class="car-details">
+                    <h4>BMW M5 F90 Competition</h4>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> თბილისი</p>
+                    
+                    <div class="car-specs">
+                        <p><i class="fa-solid fa-calendar"></i> 2020 წელი</p>
+                        <p><i class="fa-solid fa-road"></i> 42,000 კმ</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> ბენზინი</p>
+                        <p><i class="fa-solid fa-gear"></i> ავტომატიკა</p>
+                    </div>
+                    <button class="view-btn">დეტალურად ნახვა</button>
+                </div>
+            </div>
+
+            
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="https://unsplash.com" alt="Mercedes">
+                    <div class="price-tag">$62,000</div>
+                </div>
+                <div class="car-details">
+                    <h4>Mercedes-Benz E63 AMG</h4>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> ბათუმი</p>
+                    <div class="car-specs">
+                        <p><i class="fa-solid fa-calendar"></i> 2019 წელი</p>
+                        <p><i class="fa-solid fa-road"></i> 65,000 კმ</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> ბენზინი</p>
+                        <p><i class="fa-solid fa-gear"></i> ავტომატიკა</p>
+                    </div>
+                    <button class="view-btn">დეტალურად ნახვა</button>
+                </div>
+            </div>
+
+            
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="https://unsplash.com" alt="Toyota">
+                    <div class="price-tag">$24,500</div>
+                </div>
+                <div class="car-details">
+                    <h4>Toyota RAV4 Hybrid</h4>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> ქუთაისი</p>
+                    <div class="car-specs">
+                        <p><i class="fa-solid fa-calendar"></i> 2021 წელი</p>
+                        <p><i class="fa-solid fa-road"></i> 28,000 კმ</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> ჰიბრიდი</p>
+                        <p><i class="fa-solid fa-gear"></i> ავტომატიკა</p>
+                    </div>
+                    <button class="view-btn">დეტალურად ნახვა</button>
+                </div>
+            </div>
+
+            
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="https://unsplash.com" alt="Porsche">
+                    <div class="price-tag">$89,000</div>
+                </div>
+                <div class="car-details">
+                    <h4>Porsche 911 Carrera</h4>
+                    
+                    <div class="car-specs">
+                        <p><i class="fa-\solid fa-calendar"></i> 2018 წელი</p>
+                        <p><i class="fa-solid fa-road"></i> 50,000 კმ</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> ბენზინი</p>
+                        <p><i class="fa-solid fa-gear"></i> ტიპტრონიკი</p>
+                    </div>
+                    <button class="view-btn">დეტალურად ნახვა</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="main-footer">
+        <p> 2026 AUTO-MARKET. ყველა უფლება დაცულია.</p>
+    </div>
+
+</body>
+</html>

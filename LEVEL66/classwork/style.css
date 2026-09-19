@@ -1,0 +1,22 @@
+h2 {
+   text-align: start;
+   color: red;
+   text-shadow: none;
+}
+
+
+h3 {
+    text-align: start;
+    color: blue;
+    text-shadow: none;
+}
+
+
+h4 {
+    text-align: start;
+    color: green;
+}
+
+p {
+    background-color: burlywood;
+}
