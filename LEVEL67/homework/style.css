@@ -1,0 +1,40 @@
+ body {
+    font-family: system-ui, sans-serif;
+    padding: 24px;
+    background: #fafafa;
+  }
+
+  table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;  
+    background: #fff;
+  }
+
+  th {
+    background: #0d9488; 
+    color: #fff;
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  td {
+    border: 1px solid #d1d5db;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #f3f4f6;
+  }
+
+
+  tbody tr:nth-child(even) td {
+    color: #0d9488;
+  }
+
+  td:first-child {
+    font-weight: 700;
+    color: #374151;
+  }
