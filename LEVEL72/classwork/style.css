@@ -1,0 +1,9 @@
+/*  justify-content-არის ჰორიზონტალური ღერძი */
+/*  align-items-განსაზღვრავს ელემენტების განლაგებას გვერდით */
+/* flex-directin-განსაზღვრავს ძირითადი ღერძის მიმართულებას*/
+.div1 {
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
