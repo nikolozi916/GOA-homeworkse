@@ -1,0 +1,34 @@
+body {
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+
+.div3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color:  red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.div4 {
+    color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color:  blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
