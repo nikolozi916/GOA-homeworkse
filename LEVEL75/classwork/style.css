@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.card {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.sedan {
+    background-color: #e28525; 
+}
+
+.suv {
+    background-color: #016972; 
+}
+
+.luxury {
+    background-color: #00403f; 
+}
+
+
+.icon {
+    margin-bottom: 35px;
+    background: rgb(255, 255, 255,);
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card h2 {
+    color: #f2f2f2;
+}
+
+
+.card p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.btn {
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    padding: 12px 30px;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+.container {
+    display: grid;
+    max-width: 920px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
