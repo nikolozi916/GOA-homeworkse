@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 20px;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+    border-radius: 50%;
+    animation: bounce 0.8s infinite alternate ease-in;
+}
+
+.shadow {
+    width: 60px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin-top: 10px;
+    animation: shadow-scale 0.8s infinite alternate ease-in;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-160px); }
+}
+
+@keyframes shadow-scale {
+    0% { transform: scale(1); opacity: 0.4; }
+    100% { transform: scale(0.5); opacity: 0.1; }
+}
