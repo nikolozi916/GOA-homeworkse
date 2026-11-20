@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(75px, auto);
+  gap: 1.5rem;
+  max-width: 1120px;
+  width: 100%;
+  grid-template-areas:
+    "create hero hero schedule"
+    "create hero hero schedule"
+    "create platforms consistent schedule"
+    "ai platforms consistent schedule"
+    "ai audience followers followers"
+    "ai audience followers followers";
+}
+
+.card {
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-create {
+  grid-area: create;
+  background-color: var(--yellow-100);
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card-create h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.card-create h2 span {
+  color: var(--purple-500);
+  font-style: italic;
+}
+
+.card-hero {
+  grid-area: hero;
+  background-color: var(--purple-500);
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.card-hero h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+.card-hero h1 span {
+  color: var(--yellow-500);
+}
+
+.card-hero img {
+  width: 180px;
+  margin-bottom: 0.5rem;
+}
+
+.card-hero p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+
+.card-schedule {
+  grid-area: schedule;
+  background-color: var(--purple-100);
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.card-schedule h3 {
+  font-size: 1.65rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.card-schedule img {
+  width: 140%;
+  max-width: none;
+}
+
+.card-schedule p {
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+
+.card-ai {
+  grid-area: ai;
+  background-color: var(--yellow-500);
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.card-ai h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.card-platforms {
+  grid-area: platforms;
+  background-color: var(--white);
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-platforms img {
+  width: 125%;
+  max-width: none;
+}
+
+.card-platforms h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+
+.card-consistent {
+  grid-area: consistent;
+  background-color: var(--yellow-500);
+  justify-content: space-between;
+  padding-bottom: 0;
+  gap: 1rem;
+}
+
+.card-consistent h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.card-consistent img {
+  margin-bottom: -15px;
+}
+
+
+.card-audience {
+  grid-area: audience;
+  background-color: var(--white);
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-audience h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.card-audience p {
+  font-size: 0.95rem;
+}
+
+.card-audience img {
+  width: 85%;
+}
+
+
+.card-followers {
+  grid-area: followers;
+  background-color: var(--purple-500);
+  color: var(--white);
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.card-followers img {
+  width: 48%;
+}
+
+.card-followers h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+
+@media (max-width: 950px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "hero hero"
+      "platforms consistent"
+      "schedule schedule"
+      "followers followers"
+      "audience create"
+      "ai ai";
+  }
+
+  .card-schedule img,
+  .card-platforms img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "platforms"
+      "consistent"
+      "schedule"
+      "followers"
+      "audience"
+      "create"
+      "ai";
+  }
+
+  .card-followers {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-followers img {
+    width: 80%;
+  }
+}

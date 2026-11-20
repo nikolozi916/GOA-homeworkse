@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(248, 245, 240);
+  color: rgb(43, 38, 35);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+
+.sidebar {
+  background-color: rgb(251, 249, 246);
+  border-right: 1px solid rgb(234, 228, 220);
+  padding: 20px 15px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 25px;
+}
+
+.logo-area {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  align-items: center;
+  gap: 10px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(74, 63, 53);
+}
+
+.logo-area img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.nav-links {
+  list-style: none;
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+
+.nav-links li {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: rgb(107, 99, 91);
+  cursor: pointer;
+}
+
+.nav-links li.active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 38, 35);
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgb(230, 225, 218);
+}
+
+.nav-links li img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.badge {
+  background-color: rgb(194, 89, 44);
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.sidebar-footer {
+  display: grid;
+  gap: 15px;
+}
+
+.weather-box {
+  background-color: rgb(250, 214, 125);
+  padding: 15px;
+  border-radius: 12px;
+  display: grid;
+  gap: 5px;
+}
+
+.weather-box small {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: rgb(125, 94, 28);
+  font-weight: bold;
+}
+
+.weather-box h3 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.weather-box p {
+  font-size: 12px;
+  color: rgb(92, 69, 20);
+}
+
+.address-info {
+  font-size: 10px;
+  line-height: 1.5;
+  color: rgb(156, 146, 136);
+}
+
+
+.main-content {
+  padding: 25px 30px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 25px;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.header-title small {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: rgb(156, 146, 136);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.header-title h1 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.header-title h1 span {
+  color: rgb(194, 89, 44);
+  font-style: italic;
+}
+
+.header-actions {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.btn-outline {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(224, 216, 206);
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: rgb(35, 32, 30);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 9px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+.cards-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(290px, 370px));
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.receipt-card {
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgb(230, 224, 216);
+  transform: rotate(-2deg);
+  display: grid;
+  gap: 15px;
+}
+
+.receipt-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: 10px;
+  color: rgb(156, 146, 136);
+  letter-spacing: 1px;
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px dashed rgb(229, 223, 215);
+  border-bottom: 1px dashed rgb(229, 223, 215);
+}
+
+.date-box small {
+  font-size: 10px;
+  color: rgb(156, 146, 136);
+}
+
+.date-box strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  margin: 3px 0;
+}
+
+.date-box span {
+  font-size: 11px;
+  color: rgb(107, 99, 91);
+}
+
+.price-list {
+  display: grid;
+  gap: 7px;
+  font-size: 12px;
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.total-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  border-top: 1px solid rgb(238, 238, 238);
+  padding-top: 12px;
+}
+
+.total-row span:last-child {
+  font-family: Georgia, serif;
+  font-size: 22px;
+}
+
+.barcode-area {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  font-size: 10px;
+  color: rgb(156, 146, 136);
+}
+
+.barcode-area img {
+  width: 110px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.welcome-card {
+  background-color: rgb(184, 80, 38);
+  color: rgb(255, 255, 255);
+  padding: 28px;
+  border-radius: 15px;
+  box-shadow: 0 12px 28px rgb(222, 198, 185);
+  transform: rotate(2deg);
+  display: grid;
+  gap: 18px;
+}
+
+.welcome-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: rgb(245, 215, 200);
+}
+
+.welcome-top img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.welcome-card h2 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.2;
+
+}
+
+.welcome-card p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(250, 235, 228);
+}
+
+
+.bottom-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.info-card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgb(235, 230, 224);
+  display: grid;
+  gap: 12px;
+}
+
+.info-card-header {
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.icon-box img {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+}
+
+.info-card-header span.label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: rgb(140, 130, 120);
+  font-weight: bold;
+}
+
+.info-card-header span.num {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  color: rgb(194, 184, 174);
+}
+
+.info-card h3 {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.info-card p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(107, 99, 91);
+}
+
+.wifi-details {
+  background-color: rgb(248, 245, 240);
+  padding: 9px 12px;
+  border-radius: 8px;
+  display: grid;
+  gap: 5px;
+  font-size: 11px;
+}
+
+.wifi-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
